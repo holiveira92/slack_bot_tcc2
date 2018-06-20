@@ -3,26 +3,26 @@ Siga os passos abaixo para realizar a instalação e execução do código nos r
 *Deploy do robô em canal do Slack <br>
 a) Na página da API do Slack(https://api.slack.com/apps/) , crie um novo aplicativo e obtenha o ID do cliente,
 token de acesso do usuário e o token de acesso da aplicação fornecido pelo
-Slack.
-b) Realizar o clone do projeto no GitHub.
+Slack.<br>
+b) Realizar o clone do projeto no GitHub.<br>
 c) Abra o arquivo .env na raiz do projeto clonado e insira os dados obtidos no
-passo ‘a)’ nas variáveis correspondentes.
+passo ‘a)’ nas variáveis correspondentes.<br>
 d) Faça login no Botkit Studio(https://studio.botkit.ai/) . Na página inicial, acesse o botão ‘New Bot’ e siga
 os passos para criação de uma aplicação. Após a criação do robô você será
 redirecionado para sua página do Glitch, plataforma que o Slack e o Botkit
-Framework utilizam para hospedagem de aplicativos.
+Framework utilizam para hospedagem de aplicativos.<br>
 e) Clone os arquivos: bot.js e functions.js do projeto baixado pelo GitHub para a
-raiz da hospedagem aberta no Glitch.
+raiz da hospedagem aberta no Glitch.<br>
 f) Nas configurações do robô no Botkit Studio, copie os endereços ‘Oauth URL’ e
 ‘Webhook Endpoint’ e insira na página de configuração do seu robô criado no
 Slack API em ‘Interactive Components’, ‘Event Subscriptions’ e ‘OAuth &
-Permissions’ respectivamente.
-g) Após seguir estes passos, basta adicionar o robô criado em seu canal no Slack.
+Permissions’ respectivamente.<br>
+g) Após seguir estes passos, basta adicionar o robô criado em seu canal no Slack.<br>
 h) Ao instalar o robô em seu canal do Slack, ele irá solicitar algumas informações
 sobre os canais de usuários e de robôs, como foi proposto nos subtópicos acima.
 Converse com o robô e forneça as informações que ele solicitar. Quando
 completamente configurado, o robô assistente irá informar que já está pronto
-para uso e já poderá receber chamadas e atuar nos canais do Slack.
+para uso e já poderá receber chamadas e atuar nos canais do Slack.<br>
 
 *Testes em Ambiente local: <br>
 1 - Crie uma pasta para o projeto <br>

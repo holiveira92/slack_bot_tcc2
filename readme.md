@@ -1,16 +1,28 @@
 Siga os passos abaixo para realizar a instalação e execução do código nos respectivos ambientes.<br>
 
-*Instalação do robô em canal do Slack <br>
-1 - Acesse https://ash-python.glitch.me/ <br>
-2 - Clique no botão "Add to Slack" <br>
-3 - Realize o procedimento de autorização solicitado pelo slack <br>
-4 - O robô será instalado no seu ambiente slack <br>
-5 - Uma mensagem inicial de instruções será enviada pelo robô <br>
-6 - Escreva algo diretamente para o robô <br>
-7 - O robô solicitará algumas informações de configuração <br>
-8 - Informe os dados solicitados para o robô <br>
-9 - Pronto! O robô está instalado, configurado e pronto para uso <br>
-
+*Deploy do robô em canal do Slack <br>
+a) Na página da API do Slack(https://api.slack.com/apps/) , crie um novo aplicativo e obtenha o ID do cliente,
+token de acesso do usuário e o token de acesso da aplicação fornecido pelo
+Slack.
+b) Realizar o clone do projeto no GitHub.
+c) Abra o arquivo .env na raiz do projeto clonado e insira os dados obtidos no
+passo ‘a)’ nas variáveis correspondentes.
+d) Faça login no Botkit Studio(https://studio.botkit.ai/) . Na página inicial, acesse o botão ‘New Bot’ e siga
+os passos para criação de uma aplicação. Após a criação do robô você será
+redirecionado para sua página do Glitch, plataforma que o Slack e o Botkit
+Framework utilizam para hospedagem de aplicativos.
+e) Clone os arquivos: bot.js e functions.js do projeto baixado pelo GitHub para a
+raiz da hospedagem aberta no Glitch.
+f) Nas configurações do robô no Botkit Studio, copie os endereços ‘Oauth URL’ e
+‘Webhook Endpoint’ e insira na página de configuração do seu robô criado no
+Slack API em ‘Interactive Components’, ‘Event Subscriptions’ e ‘OAuth &
+Permissions’ respectivamente.
+g) Após seguir estes passos, basta adicionar o robô criado em seu canal no Slack.
+h) Ao instalar o robô em seu canal do Slack, ele irá solicitar algumas informações
+sobre os canais de usuários e de robôs, como foi proposto nos subtópicos acima.
+Converse com o robô e forneça as informações que ele solicitar. Quando
+completamente configurado, o robô assistente irá informar que já está pronto
+para uso e já poderá receber chamadas e atuar nos canais do Slack.
 
 *Testes em Ambiente local: <br>
 1 - Crie uma pasta para o projeto <br>
